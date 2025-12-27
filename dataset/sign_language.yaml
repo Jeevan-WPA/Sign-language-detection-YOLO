@@ -1,0 +1,7 @@
+path: C:\Users\Intern-Tech\Documents\Sign language detection YOLO\dataset  # dataset root dir
+train: C:\Users\Intern-Tech\Documents\Sign language detection YOLO\dataset\images\train
+val: C:\Users\Intern-Tech\Documents\Sign language detection YOLO\dataset\images\val
+
+nc: 5
+names: ['hello', 'iloveyou', 'no', 'thankyou', 'yes']
+

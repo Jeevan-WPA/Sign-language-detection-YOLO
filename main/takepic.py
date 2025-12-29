@@ -5,11 +5,7 @@ import time
 labels = ['hello', 'thanks', 'iloveyou', 'yes', 'no']
 images_per_label = 15
 capture_interval = 2  # seconds
-dataset_dir = "dataset"
-
-# Create folders
-for label in labels:
-    os.makedirs(os.path.join(dataset_dir, label), exist_ok=True)
+dataset_dir = "dataset/images" 
 
 cap = cv2.VideoCapture(0)
 
@@ -47,7 +43,7 @@ for label in labels:
 
         current_time = time.time()
         if current_time - last_capture_time >= capture_interval:
-            img_path = os.path.join(dataset_dir, label, f"{label}_{count}.jpg")
+            img_path = os.path.join(dataset_dir,f"{label}_{count}.jpg")
 
             # Save ORIGINAL frame (no text)
             cv2.imwrite(img_path, frame)

@@ -1,2 +1,6 @@
 dataset/README.dataset.txt
 dataset/README.roboflow.txt
+dataset/images/train/*.jpg
+dataset/images/valid/*.jpg
+dataset/labels/train/*.txt
+dataset/labels/valid/*.txt
